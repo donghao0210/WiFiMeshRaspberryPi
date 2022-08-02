@@ -101,9 +101,9 @@ Perform the following on the pi command line:
     ```text
     auto wlan0
     iface wlan0 inet manual
-        wireless-channel 1
-        wireless-essid call-code-mesh
-        wireless-mode ad-hoc
+    wireless-channel 1
+    wireless-essid call-code-mesh
+    wireless-mode ad-hoc
     ```
 
     You can replace:
