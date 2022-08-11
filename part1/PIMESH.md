@@ -112,6 +112,7 @@ Perform the following on the pi command line:
     sudo iwconfig wlan0 essid mesh-test
     sudo iwconfig wlan0 channel 1
     ````
+    You can replace:
     - the channel number with a [valid 2.4 GHz WiFi channel number for your region](https://en.wikipedia.org/wiki/List_of_WLAN_channels) (most regions support channels 1 to 11)
     - the essid with a network name of your choosing
 
@@ -121,8 +122,7 @@ Perform the following on the pi command line:
     ````text
     sudo ~/start-batman-adv.sh
     ````
-    You can replace:
-
+    
 5. Ensure the batman-adv kernel module is loaded at boot time by issuing the following command :
 
     ```text
