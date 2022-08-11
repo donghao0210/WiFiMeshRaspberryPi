@@ -102,16 +102,19 @@ Perform the following on the pi command line:
     auto wlan0
     iface wlan0 inet manual
     wireless-channel 1
-    wireless-essid call-code-mesh
+    wireless-essid mesh-test
     wireless-mode ad-hoc
     ```
     For Arch Linux Temporary Config(Will reset after Reboot):
     ````text
-    ifconfig wlan0 down
-    iwconfig wlan0 mode ad-hoc
-    iwconfig wlan0 essid mesh-test
-    iwconfig wlan0 channel 4
-    ifconfig wlan0 192.168.1.1 up 
+    sudo ifconfig wlan0 down
+    sudo iwconfig wlan0 mode ad-hoc
+    sudo iwconfig wlan0 essid mesh-test
+    sudo iwconfig wlan0 channel 1
+    ````
+    Then run the script by:
+    ````text
+    sudo ~/start-batman-adv.sh
     ````
     You can replace:
 
